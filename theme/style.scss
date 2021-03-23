@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+$main-color: #333;
+$main-bg: #fff;
+.container_popup{
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px 30px 15px;
+    .popup_bg{
+        max-width: 500px;
+        border-radius: 10px;
+        width: 100%;
+        background: $main-bg;
+        box-shadow: 0px 0px 15px rgb(110, 108, 108);
+        padding: 20px;
+        position: relative;
+        .popup_body{
+            overflow: hidden;
+            padding-bottom: 10px;
+            .fb-post{
+                height: 300px;
+                overflow: auto;
+                width: 100%;
+            }
+        }
+        .popup_footer{
+            text-align: center;
+            padding-bottom: 15px;
+            p{
+                background: rgb(66, 145, 219);
+                color: #fff;
+                display: inline-block;
+                padding: 5px;
+                border-radius: 4px;
+            }
+        }
+        .popup_link{
+            border-top: 1px solid #dedede;
+            padding-top: 5px;
+            text-align: center;
+            a{
+                color: #4797f1;
+                &:hover{
+                    color: #073f7e;
+                }
+            }
+        }
+        .popup_close{
+            position: absolute;
+            top: -15px;
+            right: -10px;
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: #ff5159;
+            color: #fff;
+            line-height: 30px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+    }
+}
