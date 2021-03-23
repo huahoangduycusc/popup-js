@@ -20,6 +20,11 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 15px 30px 15px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .container_popup .popup_bg {
@@ -39,8 +44,6 @@
 }
 
 .container_popup .popup_bg .popup_body .fb-post {
-  height: 300px;
-  overflow: auto;
   width: 100%;
 }
 
@@ -84,5 +87,11 @@
   text-align: center;
   cursor: pointer;
   border-radius: 50%;
+}
+
+.container_popup.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 /*# sourceMappingURL=style.css.map */
